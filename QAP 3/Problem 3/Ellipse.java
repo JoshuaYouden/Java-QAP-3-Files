@@ -49,6 +49,6 @@ public class Ellipse extends Shape {
 
     @Override
     public String toString() {
-        return "An Ellipse with major axis " + majorAxis + " and minor axis " + minorAxis + ", which is a subclass of " + super.toString();
+        return "An Ellipse with major axis " + majorAxis + " and minor axis " + minorAxis + ", which is a subclass of Shape";
     }
 }

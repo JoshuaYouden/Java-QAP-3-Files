@@ -6,6 +6,7 @@ public abstract class Shape {
 
     // Constructor
     public Shape() {
+        name = "default";
         color = "blue";
         filled = true;
     }

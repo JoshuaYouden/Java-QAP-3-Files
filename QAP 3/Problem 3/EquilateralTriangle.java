@@ -74,6 +74,6 @@ public class EquilateralTriangle extends Shape {
 
     @Override
     public String toString() {
-        return "An Equilateral Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of " + super.toString();
+        return "An Equilateral Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of Shape";
     }
 }

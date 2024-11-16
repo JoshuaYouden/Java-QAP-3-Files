@@ -73,6 +73,6 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return "A Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of " + super.toString();
+        return "A Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of Shape";
     }
 }
