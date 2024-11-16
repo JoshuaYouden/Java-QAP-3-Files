@@ -6,9 +6,18 @@ public class Triangle extends Shape {
 
     // Constructor
     public Triangle() {
+        if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
+            System.out.println("Error: All sides must be greater than 0.");
+            System.exit(1);
+        }
+        if (sideA + sideB <= sideC || sideB + sideC <= sideA || sideC + sideA <= sideB) {
+            System.out.println("Error: The sides do not form a valid triangle.");
+            System.exit(1);
+        }
+
         sideA = 1.0;
-        sideB = 1.0;
-        sideC = 1.0;
+        sideB = 2.0;
+        sideC = 3.0;
     }
 
     public Triangle(double sideA, double sideB, double sideC) {
