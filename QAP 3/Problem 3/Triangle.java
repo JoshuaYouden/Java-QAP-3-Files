@@ -7,11 +7,11 @@ public class Triangle extends Shape {
     // Constructor
     public Triangle() {
         if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
-            System.out.println("Error: All sides must be greater than 0.");
+            System.err.println("Error: All sides must be greater than 0.");
             System.exit(1);
         }
         if (sideA + sideB <= sideC || sideB + sideC <= sideA || sideC + sideA <= sideB) {
-            System.out.println("Error: The sides do not form a valid triangle.");
+            System.err.println("Error: The sides do not form a valid triangle.");
             System.exit(1);
         }
 
