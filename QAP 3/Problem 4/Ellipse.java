@@ -48,6 +48,12 @@ public class Ellipse extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        majorAxis *= scaleFactor;
+        minorAxis *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return "An Ellipse with major axis " + majorAxis + " and minor axis " + minorAxis + ", which is a subclass of Shape";
     }

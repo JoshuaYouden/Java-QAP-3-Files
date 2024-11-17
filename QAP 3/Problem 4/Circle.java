@@ -28,6 +28,11 @@ public class Circle extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        radius *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return "A Circle with radius " + radius + ", which is a subclass of Shape";
     }

@@ -73,6 +73,13 @@ public class EquilateralTriangle extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        sideA *= scaleFactor;
+        sideB *= scaleFactor;
+        sideC *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return "An Equilateral Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of Shape";
     }

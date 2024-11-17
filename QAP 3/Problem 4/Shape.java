@@ -1,4 +1,4 @@
-public abstract class Shape {
+public abstract class Shape implements Scalable {
     // Attributes
     private String name;
     private String color;

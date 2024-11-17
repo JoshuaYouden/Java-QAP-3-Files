@@ -72,6 +72,13 @@ public class Triangle extends Shape {
     }
 
     @Override
+        public void scale(double scaleFactor) {
+            sideA *= scaleFactor;
+            sideB *= scaleFactor;
+            sideC *= scaleFactor;
+        }
+
+    @Override
     public String toString() {
         return "A Triangle with sides " + sideA + ", " + sideB + ", and " + sideC + ", which is a subclass of Shape";
     }
